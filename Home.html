@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mini Project</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body class="Background">
+    <div class="home">
+        <img src="head.png" alt="" class="header">
+        <div class="nav">
+            <div class="dropdown">
+                <button>Log In</button>
+                <div>
+                    <a href="#"><button onclick="document.getElementById('id01').style.display='block'">User</button></a>
+                    <a href="#"> <button onclick="document.getElementById('id02').style.display='block'">MANAGEMENT</button> </a>
+                </div>
+            </div>
+
+            <div id="id01" class="Login">
+                <form class="Login-content" action="">
+                    <div class="image-container">
+                        <img src="logo.png" class="DrukW">
+                    </div>
+                    <div class="Logininfo">
+                        <label><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" id="username1" required class="user">
+
+                        <label><b>Email</b></label>
+                        <input type="email" placeholder="Enter Email" class="user">
+
+                        <label><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" id="password1" class="login-pass" required>
+
+                        <button onclick="loginuser()">Login</button>
+                        <input type="checkbox" required> Remember me
+                    </div>
+
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                            class="cancelbtn">Cancel</button> <br>
+                        <span class="pass">Dont have an Account? <a href="Signup.html">Regester Now</a></span>
+                    </div>
+                </form>
+            </div>
+            <script type="text/javascript">
+                function loginuser() {
+                    var u_name = document.getElementById('username1').value;
+                    var u_pass = document.getElementById('password1').value;
+
+                    if (u_name == "pema" & u_pass == "123") {
+                        location.assign("user.html");
+                    }
+                    else {
+                        window.alert("Sorry! login failed.");
+                    }
+                }
+            </script>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">LEARN ABOUT US</a></li>
+            </ul>
+        </div>
+        <div class="head">
+            <div>
+                <img class="icon" src="icon_adobespark.png" alt="logo">
+            </div>
+            <div class="welcom-intro">
+                <h2 class="intro"> WELCOME</h2>
+                <P class="intro">Without craftsmanship, <br> inspiration is a mere reed shaken in the wind.</P>
+            </div>
+
+        </div>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img class="pic" src="backg.jpg">
+            </div>
+
+            <div class="mySlides fade">
+                <img class="pic" src="backg2.jpg">
+            </div>
+
+            <div class="mySlides fade">
+                <img class="pic" src="back.jpg">
+            </div>
+            <div class="mySlides fade">
+                <img class="pic" src="dapa.jpg">
+            </div>
+
+        </div>
+
+        <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1 }
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides, 3000);
+            }
+        </script>
+    </div>
+
+    <div class="admin-main" id="id02">
+        <div class="admin-login">
+            <button type="button" onclick="document.getElementById('id02').style.display='none'"
+                class="admin-close"><b>X</b> </button>
+            <div class="admin-head">
+                <h2>Admin Login</h2>
+            </div>
+            <div class="admin-content">
+                <label for="user">Username</label>
+                <input type="text" id="username" class="admin-user"><br>
+
+                <label for="pass">Password</label>
+                <input type="password" id="password" class="admin-user">
+
+                <button onclick="login()" class="admin-submit">Login</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function login() {
+            var uname = document.getElementById('username').value;
+            var upass = document.getElementById('password').value;
+
+            if (uname == "tashi" & upass == "123") {
+                location.assign("management.html");
+            }
+            else {
+                window.alert("Sorry! login failed.");
+            }
+        }
+
+    </script>
+
+    <div class="information">
+        <div>
+            <p class="info info-align">
+                Vision Statement<br>
+                To be the best company in quality of product and employee service <br>
+                Help business owners, developers and homeowners in purchasing the best. <br>
+
+                Mission Statement <br>
+                Our goal is to profitably provide very high quality for <br>
+                a competitive price, so that our employees and their families <br>
+                will have a secure job, an opportunity to prosper, adequate be <br>
+                health care and a bright future. <br>
+            </p>
+        </div>
+        <div>
+            <img src="furniture.jpg" alt="" class="furniture info-align">
+        </div>
+    </div>
+
+    <div class="provide">
+        <h1 class="shop">We provide the best for you</h1>
+        <h2 class="bestf">If you tend to associate this massive home improvement store with things <br>
+            like tools and appliances, make sure to nose around the furniture aisles the <br>
+            next time you're there in person or shopping online. (Depending on the product, <br>
+            you can opt to either have it delivered to your home or arrange to pick it up <br>
+            at your local Home Depot.)</h2>
+    </div>
+    <div class="Furniture">
+        <div class="image">
+            <img class="Line" src="showcase1.jpg" alt="Bricks">
+            <div class="image-over image-over-back">
+                <div class="image-title">Showcase</div>
+                <p class="image-description">
+                    Wood: Hardwood. <br>
+                    Total quantity: 20. <br>
+                    Price: 20,000 Nu/-. <br>
+                    Contact Us: 17544201/77345266
+                </p>
+            </div>
+        </div>
+        <div class="image">
+            <img class="Line" src="Balter.jpg" alt="Bricks">
+            <div class="image-over image-over-back">
+                <div class="image-title">Alter</div>
+                <p class="image-description">
+                    Wood: Hardwood. <br>
+                    Total quantity: 5. <br>
+                    Price: 25,000 Nu/-. <br>
+                    Contact Us: 17544201/77345266
+                </p>
+            </div>
+        </div>
+        <div class="image">
+            <img class="Line" src="bdrawer.jpg" alt="Bricks">
+            <div class="image-over image-over-back">
+                <div class="image-title">Drawer</div>
+                <p class="image-description">
+                    Wood: Hardwood. <br>
+                    Total quantity: 20. <br>
+                    Price: 5,000 Nu/-. <br>
+                    Contact Us: 17544201/77345266
+                </p>
+            </div>
+        </div>
+        <div class="image">
+            <img class="Line" src="Bedd.jpg" alt="Bricks">
+            <div class="image-over image-over-back">
+                <div class="image-title">Home Bed</div>
+                <p class="image-description">
+                    Wood: Hardwood. <br>
+                    Total quantity: 25. <br>
+                    Price: 4,000 Nu/-. <br>
+                    Contact Us: 17544201/77345266
+                </p>
+            </div>
+        </div>
+        <div class="image">
+            <img class="Line" src="table.jpg" alt="Bricks">
+            <div class="image-over image-over-back">
+                <div class="image-title">Table</div>
+                <p class="image-description">
+                    Wood: Hardwood. <br>
+                    Total quantity: 20. <br>
+                    Price: 1,000 Nu/-. <br>
+                    Contact Us: 17544201/77345266
+                </p>
+            </div>
+        </div>
+        <div class="image">
+            <img class="Line" src="sofa.jpg" alt="Bricks">
+            <div class="image-over image-over-back">
+                <div class="image-title">Sofa</div>
+                <p class="image-description">
+                    Wood: Hardwood. <br>
+                    Total quantity: 12. <br>
+                    Price: 30,000 Nu/-. <br>
+                    Contact Us: 17544201/77345266
+                </p>
+            </div>
+        </div>
+        <div class="image">
+            <img class="Line" src="dressing1.jpg" alt="Bricks">
+            <div class="image-over image-over-back">
+                <div class="image-title">Dressing Mirror</div>
+                <p class="image-description">
+                    Wood: Hardwood. <br>
+                    Total quantity: 7. <br>
+                    Price: 15,000 Nu/-. <br>
+                    Contact Us: 17544201/77345266
+                </p>
+            </div>
+        </div>
+        <div class="image">
+            <img class="Line" src="chodrom1.jpg" alt="Bricks">
+            <div class="image-over image-over-back">
+                <div class="image-title">Traditional</div>
+                <p class="image-description">
+                    Wood: Hardwood. <br>
+                    Well carved by the Zorig chusum <br>
+                    Total quantity: 20. <br>
+                    Price: 20,000 Nu/-. <br>
+                    Contact Us: 17544201/77345266
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="vacancies">
+        <h1>Vacancies</h1>
+    </div>
+
+    <div class="wrapper">
+        <div class="blog">
+            <div class="use-blog">
+                <div class="blog-img">
+                    <img src="vacancie4.jpg" alt="">
+                    <a href="">Secretary</a>
+                </div>
+                <div class="blog-content">
+                    <h4>DRUKWOOD</h4>
+                    <br>
+                    <p>In need of a Experienced and
+                        knowlegble person, Register
+                        with all the required documents.
+                        We wll be respondible to provide
+                        the best working place for you
+                        all.
+                    </p>
+                    <a href="">read more</a>
+                </div>
+            </div>
+            <div class="use-blog">
+                <div class="blog-img">
+                    <img src="vacancies.jpg" alt="">
+                    <a href="">Worker</a>
+                </div>
+                <div class="blog-content">
+                    <h4>DRUKWOOD</h4>
+                    <br>
+                    <p>Well Experienced and Skilled workers
+                        for the better improvement of the
+                        desired products to be made. Register
+                        with all the required documents.
+                        Provide the best working condition
+                        for all.
+                    </p>
+                    <a href="vacancie.html">read more</a>
+                </div>
+            </div>
+            <div class="use-blog">
+                <div class="blog-img">
+                    <img src="vacancie2.jpg" alt="">
+                    <a href="">Security</a>
+                </div>
+                <div class="blog-content">
+                    <h4>DRUKWOOD</h4>
+                    <br>
+                    <p>For the company's security purpose,
+                        in need of best security there is
+                        to be provided.Register with all the
+                        required documents. Provide the best
+                        working condition for all. Job details
+                        provided</p>
+                    <a href="">read more</a>
+                </div>
+            </div>
+            <div class="use-blog">
+                <div class="blog-img">
+                    <img src="became-dealer-new.jpg" alt="">
+                    <a href="">Dealer</a>
+                </div>
+                <div class="blog-content">
+                    <h4>DRUKWOOD</h4>
+                    <br>
+                    <p>Need reliable source to sell our products,
+                        Whereny, we can both our and customer
+                        services to be provided.Register with all the
+                        required documents. Provide the best
+                        working condition for all. Job details
+                        provided</p>
+                    <a href="">read more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ContactInfo">
+        <div class="cinfo">
+            <h3>Office Location</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.6964240816196!2d89.39372318468337!3d26.849606297908743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e3cb2c763f5457%3A0x3621cf5669f720cd!2sRinchending%20Heliport!5e0!3m2!1sen!2sus!4v1620298312119!5m2!1sen!2sus"
+                width="300" height="240" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="cinfo info1">
+            <p>Owner: Mr. Tashi Phuntsho <br>
+                Contact: 77654323. <br>
+                Manager: Mrs. Sonam dema. <br>
+                Contact: 17563452. Email: Tashitak.cst@rub.bt. <br>
+                <br>
+                <br>
+                Address <br>
+                DRUKWOOD, Chumey: Chamkhar <br>
+                Bumthang: Bhutan, <br>
+                Post-Box No: 450 <br>
+                Postal Code: 21101
+            </p>
+        </div>
+        <div class="cinfo">
+            <h4 class="TextI">FOLLOW US ON:</h4>
+            <a href="#"><img class="Contact" src="face.png" alt="">Facebook</a>
+            <a href="#"><img class="Contact" src="twi.png" alt="">Twitter</a>
+            <a href="#"><img class="Contact" src="ins.png" alt="">Instragram</a>
+            <a href="#"><img class="Contact" src="goog.png" alt="">Google</a>
+        </div>
+    </div>
+    <div class="Privacy">
+        <div>
+            <img class="Contact1" src="pravacy.jpg" alt="">
+            <h3>We care for your security</h3>
+            <a href="">
+                Privacy policy | Trust us and will provide with best services
+            </a>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

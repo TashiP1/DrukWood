@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container-box{
+    display: flex;
+}
+.announcements{
+    background-color: rgb(233, 227, 216);
+    margin: 20px 0px 0px 40px;
+    padding: 20px;
+    font-family: 'Alfa slab one',cursive;
+    font-size: 15px;
+}
+table{
+  border-collapse: collapse;
+  text-align: left;
+}
+ol li{
+    margin-left: 40px;
+}
+.D-video{
+    background-color: rgb(233, 227, 216);
+    margin: 20px 40px 0px 0px;
+    padding: 20px;
+}
+.D-video video{
+    width: 300px;
+    height: 400px;
+}
+.announcements img{
+    width: 70%;
+    height: 600px;
+}
+.vaca-main{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+  .F-btn{
+    width: 150px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 20px;
+  }
+  .form-close{
+    height: 20px;
+    width: 20px;
+    background-color: rgb(82, 82, 235);
+    border-style: none;
+    color: black;
+    margin-left: 95%;
+  }
+  .vaca-form{
+    width: 35%;
+    background-color: brown;
+    position: relative;
+    left: 35%;
+    top: 40px;
+    background-color: #fefefe;
+    box-shadow: 10px 10px 10px gray;
+    border: 2px solid #edebec;
+  }
+  input[type=text], input[type=email], input[type=tel]{
+    width: 90%;
+    margin-bottom: 20px;
+    margin-left: 12px;
+    padding: 10px;
+  }
+  .form-head, .personal{
+    background-color: rgb(82, 82, 235);
+    height: 60px;
+    text-align: center;
+    color: white;
+    padding: 40px;
+  }
+  label{
+    margin-top: 10px;
+    margin-left: 14px;
+  }
+  input[type=submit]{
+    width: 40%;
+    background-color: brown;
+    border-radius: 10px;
+    height: 40px;
+    margin-left: 30%;
+    margin-top: 40px;
+  }
+  .fotter{
+    background:radial-gradient(#fff, #cce6ff);
+    display: flex;
+    width: 92%;
+    margin: 20px 0px 0px 40px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .imagee{
+      width: 550px;
+      height: 220px;
+  }
+  .describe{
+      height: 250px;
+      width: 350px;
+      margin-left: 30px;
+      margin-top: 5%;
+  }
+  .describe h1{
+      margin-bottom: 30px;
+  }
+  

@@ -1,0 +1,406 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.Background{
+    background: url('white1.jpg') no-repeat fixed;
+    background-size: cover;
+} 
+.header{
+    width: 100%;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+.nav ul li{
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 22px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: .9s;
+}
+.nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+.nav ul li:hover{
+    transform: scale(1.15);
+}
+.sign{
+    display: flex;
+    width: 220px;
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+.dropdown{
+    display:inline-block;
+    position:relative;
+    margin-right: 25px;
+    width: 150px;
+}
+.dropdown button{
+    border:none;
+    width: 100%;
+    padding:14px 16px;
+    border-radius: 4px;
+    background-color:rgba(190, 19, 19, 0.658);
+    color:white;
+    transition:.3s;
+    cursor:pointer;
+}
+.dropdown:hover button{
+    background-color:rgba(190, 19, 19, 0.658);
+}
+.dropdown div{
+    background-color:#fff;
+    box-shadow:0 4px 8px rgba(0,0,0,0.2);
+    z-index:1;
+    visibility:hidden;
+    position:absolute;
+    min-width:100%;
+    opacity:0;
+    transition:.3s;
+}
+.dropdown:hover div{
+    visibility:visible;
+    opacity:1;
+}
+.dropdown div a{
+    display:block;
+    text-decoration:none;
+    padding:8px;
+    color:#000;
+    transition:.1s;
+    white-space:nowrap;
+} 
+.Login, .admin-main{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+.Login-content{
+    background-color: #fefefe;
+    border: 1px solid #888;
+    width: 400px;
+    margin-left:35%;
+    margin-top: 20px;
+    border: 6px solid #edebec;
+}
+.user, .login-pass { 
+    width: 100%; 
+    padding: 14px 50px; 
+    margin: 10px 0px; 
+    display: inline-block; 
+    border: 1px solid #ccc; 
+    box-sizing: border-box; 
+} 
+.cancelbtn{
+    width: auto;
+}
+.image-container{
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+Button{
+    background-color: rgba(190, 19, 19, 0.658);
+    color: white;
+    padding: 16px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    width: 100%;
+ }
+.head{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px 10px 0px;
+}
+.icon{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    left: 20px;
+}
+.intro{
+    font-family: 'Alfa slab one',cursive;
+    color:black;
+    font-size: 30px;
+}
+.welcom-intro{
+    display: block;
+    text-align: center;
+}
+.slideshow-container {
+    height: 550px;
+    border-style: solid;
+    border-width: 3px;
+    border-color:rgba(3, 3, 3, 0.507);
+}
+.pic {
+    width: 100%;
+    height: 550px;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: .2} 
+    to {opacity: 1}
+}
+.admin-login{
+    background-color: white;
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 2px;
+    position: relative;
+    left: 40%;
+    top: 200px;
+    box-shadow: 10px 10px 10px gray;
+    overflow: auto;
+}
+.admin-close{
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-style: none;
+    color: black;
+    margin-left: 85%;
+}
+.admin-head{
+    font-family: 'Alfa slab one',cursive;
+    text-align: center;
+}
+.admin-content{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.admin-user{
+    width: 60%;
+    height: 30px;
+    border-radius: 5px;
+    margin: 20px 0px 0px 20px;
+}
+.admin-submit{
+    width: 40%;
+    height: 40px;
+    border-radius: 4px;
+    margin: 20px 0px 20px 90px;
+    background-color: rgba(158, 42, 42, 0.822);
+}
+.Btn{
+    height: 60px;
+    width: 200px;
+    border-width: 3px;
+    border-radius: 10px;
+    color:white;
+}
+.information{
+    margin-top: 80px;
+    background-color:rgb(255, 178, 77);
+    height: 350px;
+    display: flex;
+}
+.info{
+    font-family:'Alfa slab one',cursive;
+    font-size: 15px;
+    color:black;
+}
+.furniture{
+    height: 250px;
+    width: 450px;
+    margin-top: 60px;
+}
+.info-align{
+   margin: 40px 0px 0px 90px;
+}
+.shop{
+    font-family: 'Alfa slab one',cursive;
+    margin: 30px;
+    font-size: 30px;
+    color: tomato;
+}
+.bestf{
+    font-family: 'Alfa slab one',cursive;
+    font-size: 15px;
+    margin-left: 30px;
+}
+.Furniture{
+	display: grid;
+    background-color:rgb(255, 178, 77);
+	height: 600px;
+	grid-template-columns:repeat(4, 1fr);
+	margin-top: 60px;
+    overflow: hidden;
+}
+.Line{
+    margin:20px 0px 0px 15px;
+	border-radius: 10px;
+	border-width: 4px;
+    height: 250px;
+	width: 310px;
+}
+.image {
+    position: relative;
+}
+.image-over {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 250px;
+	width: 310px;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: #ffffff;
+    font-family: 'Alfa slab one',cursive;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+    margin:20px 0px 0px 15px;
+}
+.image-over-back {
+    background: rgba(0, 0, 0, 0.637);
+}  
+.image-over > * {
+    transform: translateX(40px);
+    transition: transform 0.50s;
+}  
+.image-over:hover {
+    opacity: 1;
+}
+.image-over:hover > * {
+    transform: translateY(0);
+}
+.image-title {
+    font-size: 2em;
+    font-weight: bold;
+}
+.image-description {
+    font-size: 15px;
+    margin-top: 5px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+  font-family: 'Poppins', sans-serif;
+}
+.vacancies{
+    margin: 60px 0px 30px 60px;
+}
+.wrapper{
+  width:1200px;
+  margin: 10px 0px 20px 90px;
+}
+.blog{
+  display:flex;
+  justify-content:space-between
+}
+.use-blog{
+  flex-basis:250px;
+  background-color: white;
+  border:1px solid black;
+}
+.blog-img{
+  position:relative;
+  overflow:hidden;
+}
+.blog-img img{
+  width:100%;
+  transition:.3s;
+}
+.use-blog:hover .blog-img img{
+  transform:scale(1.1)
+}
+.blog-img a{
+  position:absolute;
+  left:0;
+  top:0;
+  color:#fff;
+  text-decoration:none;
+  text-transform:capitalize;
+  font-size:18px;
+  background-color:#ff7720;
+  padding:10px 30px;
+}
+
+.blog-info a{
+  color:#333;
+  text-decoration:none;
+  margin:0 10px;
+  display:inline-block
+}
+.blog-content{
+  padding:20px;
+  color: black;
+}
+.blog-content a{
+  background-color:#ff7720;
+  color:#fff;
+  text-decoration:none;
+  padding:10px 20px;
+  font-size:16px;
+  text-transform:capitalize;
+  display:inline-block;
+  margin-top:20px;
+  position:relative;
+  z-index:2;
+}
+.ContactInfo{
+    background-color:rgb(255, 178, 77);
+    display: flex;
+    height: 300px;
+    margin-top: 80px;
+}
+.cinfo{
+    margin: 30px 0px 0px 100px;
+}
+.cinfo a{
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-family: 'Alfa slab one',cursive ;
+}
+.info1{
+    font-family: 'Alfa slab one',cursive;
+    font-size: 15px;
+    color: black;
+    margin-top: 50px;
+}
+.Contact{
+    height: 30px;
+    width: 40px;
+    display: block;
+    transition: .5s ease;
+}
+.Contact:hover{
+    transform:scale(1.25);
+}
+.TextI{
+    font-family: 'Alfa slab one',cursive;
+}
+.Contact1{
+    height: 40px;
+    width: 70px;
+    margin-top: 30px;
+}
+.Privacy{
+    background-color: white;
+    text-align: center;
+    height: 150px;
+}
